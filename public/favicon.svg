@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1a2040"></stop>
+      <stop offset="100%" stop-color="#0a0d18"></stop>
+    </radialGradient>
+    <linearGradient id="jGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a8b4ff"></stop>
+      <stop offset="100%" stop-color="#7a8cff"></stop>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.2" result="b"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="b"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  
+  <rect width="64" height="64" rx="14" fill="url(#bgGlow)"></rect>
+
+  
+  <rect x="2.5" y="2.5" width="59" height="59" rx="12" fill="none" stroke="rgba(122,140,255,0.18)" stroke-width="1"></rect>
+
+  
+  <g filter="url(#glow)">
+    <path d="M 41 14&#xA;             L 41 40&#xA;             C 41 47.5, 35 52, 28.5 52&#xA;             C 23 52, 19 49, 17 44.5" fill="none" stroke="url(#jGrad)" stroke-width="5" stroke-linecap="round"></path>
+    
+    <line x1="32" y1="14" x2="50" y2="14" stroke="url(#jGrad)" stroke-width="5" stroke-linecap="round"></line>
+  </g>
+
+  
+  <circle cx="17" cy="44.5" r="2.2" fill="#a8b4ff" opacity="0.9"></circle>
+</svg>
