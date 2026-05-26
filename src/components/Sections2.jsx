@@ -140,7 +140,7 @@ const Research = () =>
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-end' }}>
-          <a href="#" style={{
+          <a href="https://arxiv.org/abs/2512.00129" style={{
           fontFamily: '"Geist Mono", monospace', fontSize: 12,
           padding: '11px 20px', borderRadius: 999,
           border: '1px solid rgba(122, 140, 255, 0.3)',
